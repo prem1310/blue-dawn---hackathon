@@ -130,6 +130,7 @@ margin-bottom: 10px;
 }
 .about-section ul {
 list-style-type:none;
+    font-size:20px;
 }
 footer {
     color:white;
