@@ -6,8 +6,6 @@
   <link rel="stylesheet" href="in.css">
   <title>bluedawn sign in </title>
 </head>
-<body>
-  <?php include 'in.php';?>
   <script>
   document.querySelector('.signin-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the default form submission
@@ -36,6 +34,9 @@
     });
   });
 </script>
+
+<body>
+  <?php include 'in.php';?>
   <div class="container" action="in.php">
   <a href="index.html"><img src="bluedawn.png" alt="Image Description" , height = "120px",width="100px" > </a>
     <form class="signin-form" action="index.html">
