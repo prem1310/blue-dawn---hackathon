@@ -5,6 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="up.css">
   <title>bluedawn Signup</title>
+   <script>
+    function validateForm() {
+      var username = document.getElementById('username').value;
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+
+      if (username === '' || email === '' || password === '') {
+        alert('Please fill in all fields');
+        return false;
+      }
+
+      // You can add more complex validation logic here if needed
+
+      return true; // Form submission allowed
+    }
+  </script>
 </head>
 <body>
  
@@ -12,7 +28,7 @@
   <div class="container">
     <a href="index.html"><image src="bluedawn.png" , height="80px",width="80px"></a>    
       <h2 style="text-align:center;">Sign-up to Bluedawn</h2>
-    <form class="signup-form" action="signup.php">
+     <form class="signup-form" action="signup.php" onsubmit="return validateForm()">
      
       <label for="username">Username</label>
       <input type="text" id="username" name="username" required>
