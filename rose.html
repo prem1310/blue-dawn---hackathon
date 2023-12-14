@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .rose {
+            width: 50px;
+            height: 50px;
+            background-color: #ff3366;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .petal {
+            width: 50px;
+            height: 100px;
+            background-color: #ff3366;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -50px;
+            animation: petalBloom 3s ease-in-out 1 forwards;
+        }
+
+        @keyframes petalBloom {
+            0% {
+                transform: scaleY(0);
+            }
+            100% {
+                transform: scaleY(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="rose" id="rose">
+    </div>
+
+    <script>
+        function bloomRose() {
+            const rose = document.getElementById('rose');
+
+            for (let i = 0; i < 6; i++) {
+                const petal = document.createElement('div');
+                petal.className = 'petal';
+                petal.style.transform = `rotate(${i * 60}deg)`;
+                rose.appendChild(petal);
+            }
+        }
+
+        // Trigger the rose blooming animation
+        setTimeout(bloomRose, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 0px 0;
+}
+
+.navbar {
+    display: flex;
+
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 600px;
+}
+
+.logoname {
+    padding: 0px;
+    margin:0px;
+    left:0;
+    top:0;
+    font-size:32px;
+    font-family:
+}
+
+.block{
+   border:2px inset;
+ margin:10px;
+ width: auto;
+ padding:25px;
+ color:white;
+<!-- text-shadow: 2px 2px #00004d; -->
+ line-height:25px;
+ background-image: linear-gradient(to bottom right, #1e81b0, #76b5c5);
+<!-- background:rgba(242, 242, 242, 0.4);-->
+margin-bottom: 10px;
+  border-radius:20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+
+.container img {
+  height:100px;
+  width:130px;
+  padding:5px;
+}
+
+.left-blocks,
+.right-blocks {
+    width: 45%;
+  
+}
+
+.block .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.block .content img {
+    max-width: 40%; /* Adjust the image width */
+    margin-left: 20px;
+}
+
+.block .content .text {
+    max-width: 55%; /* Adjust the text width */
+}
+
+.text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 15px;
+}
+
+/* Styles for specific elements (Communities, Video Guides, Books) */
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    background-color: #1a3f5a;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    background-color: #777;
+}
+
+.about-section h2,
+.about-section p,
+.about-section ul {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+.about-section ul {
+list-style-type:none;
+}
+footer {
+    color:white;
+    background-color: #1a3f5a;
+    width:100%;
+    padding:10px;
+    text-align:center;
+    bottom:0;
+    
+}
+.btnlen{
+    border:1px #1a3f5a solid;
+    padding:5px;
+    border-radius:10px;
+    color:white;
+    background: #1a3f5a;
+}
+.btnatag:hover{
+    background:#f2f2f2;
+}
+.headertext{
+    font-family:"Sofia", sans-serif; 
+}
