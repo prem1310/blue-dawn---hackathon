@@ -56,8 +56,9 @@ header {
  line-height:25px;
  background-image: linear-gradient(to bottom right, #1e81b0, #76b5c5);
 <!-- background:rgba(242, 242, 242, 0.4);-->
-margin-bottom: 10px;
-  border-radius:20px;
+ margin-bottom: 10px;
+ border-radius:20px;
+ position:flex;
 }
 
 .container {
